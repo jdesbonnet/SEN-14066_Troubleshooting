@@ -1,5 +1,10 @@
 # SEN-14066_Troubleshooting
 
+UPDATE 28 May 2018, 1030Z: I changed the UART adapter to a cleap Prolific device. Using python-mercuryapi on Linux I was able to establish two way communication with the M6E-NANO device. The UART adapter quickly disconnects which is almost certainly because it cannot supply enough current. This is major progess. 
+
+*********************************
+
+
 I'm having difficulty establishing communication with the SEN-14066 board through the FTDI UART connector.
 
 I've tried the Universal Reader Assistant on both Windows 10 (both VM and real machine) using genuine FTDI
