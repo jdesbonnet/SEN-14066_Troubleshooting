@@ -27,6 +27,11 @@ this signal is prevening the UART from functioning.
 Other obserations: the power LED is on. The board does get warm. On my SDR I can see a strong 
 signal at about 900MHz while the board is powered.
 
+This is the scope trace when I plug in the FTDI cable. Blue is Vcc.
+
+![scope trace on plugging in USB cable](./scope_3.png)
+
+
 Do you have any suggestions on further troublshooting?
 
 BTW I can assure you, because of the relatively high cost of the board, it has been treated with the
