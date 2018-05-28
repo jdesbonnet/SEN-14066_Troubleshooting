@@ -37,3 +37,13 @@ Do you have any suggestions on further troublshooting?
 BTW I can assure you, because of the relatively high cost of the board, it has been treated with the
 upmost care.  
 
+Update 28 May 2018: More observations:
+
+ * I connected to FTDI cable UART port with Linux picocom: garbage is being printed on the terminal screen dispite the oscilloscope trace showing no data activity on the incomig line (TXO from the board).  It seems this 40MHz noise signal is definately interfering with UART operation.
+
+ * When sending random characters via picocom terminal program, I can see the UART data (with the super-imposed noise signal) on both sides of the buffer chip. I don't see any data being transmitted from the board on either side of the buffer chip.
+ 
+ * Sending any character to the board seems to randomly change the amplitude of the noise signal.
+ 
+ * I wonder is it getting enough power from FTDI cable? Vcc also has this 40MHz noise oscillating from about 4.6V to 5.0V.
+
