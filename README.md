@@ -1,5 +1,27 @@
 # SEN-14066_Troubleshooting
 
+UPDATE 29 May 2018, 0300Z: I'm reading tags with python-mercuryapi on Linux now.   To get this working I used a Prolific USB UART adapter and supplied Vcc from a separate PSU.  Even with a seprate PSU the genuine FTDI cables were acting weird (as described below). 
+
+```
+joe@joe-Precision-T1650:/var/tmp/python-mercuryapi$ python3 test.py 
+M6e Nano
+['NA2', 'NA3', 'IN', 'JP', 'PRC', 'EU3', 'KR2', 'AU', 'NZ', 'open']
+[1]
+[(216, 32537)]
+[]
+Reading...
+b'E200400573070143198047A5' 1 1 215
+b'E2004005730701341980478D' 1 1 214
+b'E20040057307013919804797' 1 1 213
+b'E200400573070143198047A5' 1 1 211
+b'E20040057307013919804797' 1 1 216
+b'E2004005730701341980478D' 1 1 213
+b'E2004005730701301980477F' 1 1 211
+b'E200400573070147198047A7' 1 1 211
+```
+
+*********************************
+
 UPDATE 28 May 2018, 1030Z: I changed the UART adapter to a cleap Prolific device. Using python-mercuryapi on Linux I was able to establish two way communication with the M6E-NANO device. The UART adapter quickly disconnects which is almost certainly because it cannot supply enough current. This is major progess. 
 
 *********************************
