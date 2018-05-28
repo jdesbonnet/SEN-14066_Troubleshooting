@@ -45,5 +45,5 @@ Update 28 May 2018: More observations:
  
  * Sending any character to the board seems to randomly change the amplitude of the noise signal.
  
- * I wonder is it getting enough power from FTDI cable? Vcc also has this 40MHz noise oscillating from about 4.6V to 5.0V.
+ * I wonder is it getting enough power from FTDI cable? Vcc also has this 40MHz noise oscillating from about 4.6V to 5.0V. [No I don't think so. Just tried powering from a separate 5V PSU. Drawing 200mA. But noise signal still there.] 
 
