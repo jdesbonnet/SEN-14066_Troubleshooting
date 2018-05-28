@@ -18,9 +18,11 @@ on return (yellow).
 
 
 However of more concern is a very large high frequency signal superimposed on the UART lines. My first
-thought was this was the lines or scope probe picking up the UHF transmitter, but I measured
+thought was this was UHF from the transmitter, but I measured
 the frequency to be exactly 40MHz: not the 900MHz or so from the transmitter. I suspect 
 this signal is prevening the UART from functioning. 
+
+![scope screen grab of RXI (green) and TXO (yellow) at 10ns/div timebase showing 40MHz signal](./scope_0.png)
 
 Other obserations: the power LED is on. The board does get warm. On my SDR I can see a strong 
 signal at about 900MHz while the board is powered.
